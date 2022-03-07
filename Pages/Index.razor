@@ -1,0 +1,42 @@
+﻿@page "/"
+
+<PageTitle>Idle Roze</PageTitle>
+
+<div class="sidebar">
+    <div class="sidebar-navi">
+        Stats
+    </div>
+    <div class="sidebar-content">
+        <ul>
+            @foreach (var stat in stats)
+        {
+            <li>@stat.Name : @stat.Value</li>
+        }
+        </ul>
+
+
+        Petals: @currentPetals <br />
+        Water: @currentWater
+    </div>
+</div>
+<div class="content">
+    <button class="btn" @onclick="PickPetals">Pick Petals</button>
+    <button class="btn btn-primary" @onclick="RefreshWater">Click me</button>
+    <button class="btn" @onclick="Setup">Setup</button>
+</div>
+
+@code{
+    private int currentPetals = 5;
+    private int currentWater = 0;
+    public void PickPetals() {
+        currentPetals++;
+    }
+
+    private void RefreshWater() {
+        currentWater = 100;
+    }
+
+    private void Setup() {
+
+    }
+}
