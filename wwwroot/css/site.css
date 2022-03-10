@@ -1,0 +1,41 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    background: #232323;
+    border-right: 1px solid white;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    background: #424242;
+    width: 90%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strains {
+    border: 1px solid black;
+    margin: 1em;
+    padding: 0.5em; 
+    max-height: 15em;
+    align-items: center;
+}
+.strain-header {
+    text-align: center;
+}
+
+.strain-notes {
+    text-align: center;
+}

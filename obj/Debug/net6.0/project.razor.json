@@ -174,6 +174,39 @@
         }
       },
       {
+        "HashCode": -609826529,
+        "Kind": "Components.Component",
+        "Name": "IdleGame.Pages.WJournal",
+        "AssemblyName": "IdleGame",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WJournal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "IdleGame.Pages.WJournal"
+        }
+      },
+      {
+        "HashCode": 1864536989,
+        "Kind": "Components.Component",
+        "Name": "IdleGame.Pages.WJournal",
+        "AssemblyName": "IdleGame",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IdleGame.Pages.WJournal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "IdleGame.Pages.WJournal",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1065816939,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
@@ -16459,6 +16492,11 @@
   },
   "RootNamespace": "IdleGame",
   "Documents": [
+    {
+      "FilePath": "c:\\Users\\XR\\Documents\\IdleGame\\Pages\\WJournal.razor",
+      "TargetPath": "Pages\\WJournal.razor",
+      "FileKind": "component"
+    },
     {
       "FilePath": "c:\\Users\\XR\\Documents\\IdleGame\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",

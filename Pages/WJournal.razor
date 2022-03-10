@@ -1,0 +1,77 @@
+@page "/wj"
+
+<PageTitle>Weed Journal</PageTitle>
+<div class="wrapper">
+<div class="sidebar">
+    <h2 @onclick="Setup">Strains</h2>
+    @foreach (var strain in strains)
+    {
+        <li>@strain.Name</li>
+    }
+</div>
+<div class="content">
+    @foreach (var strain in strains)
+    {
+        <div class="strain-wrapper" >
+        <div class="strains">
+            <h3 class="strain-header">@strain.Name</h3>
+            <table>
+                    <tr>
+                        <th>Attribute</th>
+                        <td>Type</td>
+                        <td>Brand</td>
+                        <td>Style</td>
+                        <td>THC</td>
+                        <td>THCA</td>
+                        <td>CBD</td>
+                        <td>CBDA</td>
+                        <td>Cannabinoids</td>
+                    </tr>
+                    <tr>
+                        <th>Value</th>
+                        <td>@strain.Type</td>
+                        <td>@strain.Brand</td>
+                        <td>@strain.Style</td>
+                        <td>@strain.THCValue</td>
+                        <td>@strain.THCAValue</td>
+                        <td>@strain.CBDValue</td>
+                        <td>@strain.CBDAValue</td>
+                        <td>@strain.CannabinoidsValue</td>
+                    </tr>
+                    <tr>
+                        <td colspan="9" class="strain-notes">@strain.Notes</td>
+                    </tr>
+            </table>
+        </div>
+        </div>
+    }
+</div>
+</div>
+
+@code{
+    private List<Strain> strains = new();
+
+    public void Setup() {
+        strains.Add( new Strain {
+            Name = "Amneisea Haze",
+            Type = Strain.STypes.Sativa,
+            Brand = "Emerald",
+            Style = Strain.SStyle.Flower,
+            Notes = "Heavy Hitter, Head high"
+        });
+        strains.Add( new Strain {
+            Name = "Purple Punch",
+            Type = Strain.STypes.Indica,
+            Brand = "Aloha",
+            Style = Strain.SStyle.Flower,
+        });
+        strains.Add( new Strain {
+            Name = "Nella Wafer",
+            Type = Strain.STypes.Hybrid,
+            Brand = "Arcade",
+            Style = Strain.SStyle.Flower,
+        });
+    }
+
+
+}
